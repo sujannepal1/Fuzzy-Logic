@@ -1,0 +1,38 @@
+[System]
+Name='loan_approval'
+Type='mamdani'
+Version=1.0
+NumInputs=3
+NumOutputs=0
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='CreditScore'
+Range=[300 850]
+NumMFs=3
+MF1='Low':'gaussmf',[40 350]
+MF2='Medium':'gaussmf',[40 533.333333333333]
+MF3='High':'gaussmf',[40 716.666666666667]
+
+[Input2]
+Name='Income'
+Range=[0 120000]
+NumMFs=3
+MF1='Low':'gaussmf',[10000 20000]
+MF2='Medium':'gaussmf',[10000 60000]
+MF3='High':'gaussmf',[10000 100000]
+
+[Input3]
+Name='Age'
+Range=[18 70]
+NumMFs=3
+MF1='Young':'gaussmf',[3 25]
+MF2='Middle-aged':'gaussmf',[5 40]
+MF3='Old':'gaussmf',[4 60]
+
+[Rules]

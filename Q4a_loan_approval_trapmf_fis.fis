@@ -1,0 +1,38 @@
+[System]
+Name='loan_approval_trapmf'
+Type='mamdani'
+Version=1.0
+NumInputs=3
+NumOutputs=0
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='CreditScore'
+Range=[300 850]
+NumMFs=3
+MF1='Low':'trapmf',[0 300 400 420]
+MF2='Medium':'trapmf',[380 450 600 670]
+MF3='High':'trapmf',[650 710 750 850]
+
+[Input2]
+Name='Income'
+Range=[0 120000]
+NumMFs=3
+MF1='Low':'trapmf',[0 10000 25000 40000]
+MF2='Medium':'trapmf',[30000 40000 60000 70000]
+MF3='High':'trapmf',[60000 80000 110000 130000]
+
+[Input3]
+Name='Age'
+Range=[18 70]
+NumMFs=3
+MF1='Young':'trapmf',[18 22 36 40]
+MF2='Middle-aged':'trapmf',[38 45 53 60]
+MF3='Old':'trapmf',[58 62 72 80]
+
+[Rules]
