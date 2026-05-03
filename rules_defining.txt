@@ -1,0 +1,34 @@
+
+IF CreditScore is Low AND Income is Low THEN LoanApproval is Low
+
+
+IF CreditScore is Low AND Income is Medium AND Age is Young THEN LoanApproval is Low
+IF CreditScore is Low AND Income is Medium AND Age is Middle-aged THEN LoanApproval is Low
+IF CreditScore is Low AND Income is Medium AND Age is Old THEN LoanApproval is Medium
+IF CreditScore is Low AND Income is High AND Age is Young THEN LoanApproval is Medium
+IF CreditScore is Low AND Income is High AND Age is Middle-aged THEN LoanApproval is Medium
+IF CreditScore is Low AND Income is High AND Age is Old THEN LoanApproval is Medium
+
+IF CreditScore is Medium AND Income is Low AND Age is Young THEN LoanApproval is Low
+IF CreditScore is Medium AND Income is Low AND Age is Middle-aged THEN LoanApproval is Medium
+IF CreditScore is Medium AND Income is Low AND Age is Old THEN LoanApproval is Medium
+IF CreditScore is Medium AND Income is Medium AND Age is Young THEN LoanApproval is Medium
+IF CreditScore is Medium AND Income is Medium AND Age is Middle-aged THEN LoanApproval is Medium
+IF CreditScore is Medium AND Income is Medium AND Age is Old THEN LoanApproval is Medium
+IF CreditScore is Medium AND Income is High AND Age is Young THEN LoanApproval is Medium
+IF CreditScore is Medium AND Income is High AND Age is Middle-aged THEN LoanApproval is High
+IF CreditScore is Medium AND Income is High AND Age is Old THEN LoanApproval is High
+
+IF CreditScore is High AND Income is Low AND Age is Young THEN LoanApproval is Medium
+IF CreditScore is High AND Income is Low AND Age is Middle-aged THEN LoanApproval is Medium
+IF CreditScore is High AND Income is Low AND Age is Old THEN LoanApproval is High
+IF CreditScore is High AND Income is Medium AND Age is Young THEN LoanApproval is Medium
+IF CreditScore is High AND Income is Medium AND Age is Middle-aged THEN LoanApproval is High
+IF CreditScore is High AND Income is Medium AND Age is Old THEN LoanApproval is High
+IF CreditScore is High AND Income is High AND Age is Young THEN LoanApproval is High
+IF CreditScore is High AND Income is High AND Age is Middle-aged THEN LoanApproval is High
+IF CreditScore is High AND Income is High AND Age is Old THEN LoanApproval is High
+
+
+IF CreditScore is High or Income is High or Age is High Then LoanApproval is Medium
+

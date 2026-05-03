@@ -1,0 +1,35 @@
+Submission deadline: Late submissions (without acceptable extenuating circumstances) will receive a mark of
+zero.
+This coursework is worth 20% of the year’s assessment.
+You should submit a zipped file via the Moodle site consisting of:
+ report with solutions to the exercise below in .doc or .pdf format (maximum 3 pages) and
+ all .fis files generated to solve the exercise with meaningful file names such as Q2.fis, Q4a.fis etc).
+
+Exercise
+Create a Mamdani fuzzy decision system described by three inputs X1, X2 and X3, one output Y and up-to
+27 meaningful rules. The system should model a decision tool inspired from your course topics, e.g. risk
+assessment based on credit history, age and salary level; security assessment based on level of protection,
+surveillance and hour of access etc. If no other idea sounds applicable, you may use the default example of
+a decision system for one of these examples.
+You may use either Octave Fuzzy Logic Toolbox or any Fuzzy Logic Toolbox. The inputs and outputs are
+defined by up-to 4 (and minimum 2, at your choice) appropriate membership functions, each to represent
+the linguistic terms.
+The rule base may look similarly to:
+IF X1 is small AND X2 is large THEN Y = small negative
+IF X1 is large OR X2 is large THEN Y = large positive
+IF X1 is small OR X2 is small THEN Y = small negative
+IF X1 is large AND X2 is small THEN Y = small positive
+
+Questions
+1 Describe the system chosen in free text. Clarify the inputs and output domains. [20%]
+2 Define the input and output variables providing for each linguistic variable the fuzzy values and the
+graphical representation of their membership functions. Motivate their interval(s). Choose AND
+function as the min operator; aggregation and OR as the max operator, and Gaussian/sigmoidal
+membership functions. You are expected also to submit the fuzzy inference system (FIS) file of the
+system you designed. [20%]
+3 Present an inference for output Y graphically, where X1, X2 and X3 have given values of your choice
+(“graphically” means using Rule Viewer and setting the values in it). Interpret the results. [20%]
+4 Draw the output surface and briefly describe and discuss changes relative to the original system output
+surface for the case when Trapezoidal membership function (trapmf) is used as membership function for
+all system variables. [20%]
+5 Investigate the different defuzzification techniques available in Octave Fuzzy Logic Toolbox and carry
