@@ -78,7 +78,6 @@ showrule(fis);
 
 output = evalfis([400 50000 30], fis);
 printf('Loan Approval: %.2f\n', output);
-gensurf(fis);
 methods = {'centroid', 'bisector', 'mom', 'som', 'lom'};
 test_in = [600, 80000, 35]; 
 
