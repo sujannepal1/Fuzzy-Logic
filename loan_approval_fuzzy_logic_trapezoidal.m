@@ -27,7 +27,7 @@ fis = addmf(fis,'input', 3, 'Old', 'trapmf', [70 75 80 85]);
 plotmf(fis, 'input', 3);
 waitforbuttonpress;
 
-writefis(fis, 'Q2_loan_approval_trapmf_fis');
+writefis(fis, 'Q4a_loan_approval_trapmf_fis');
 
 
 fis = addvar(fis, 'output', 'LoanApproval', [0, 100]);
